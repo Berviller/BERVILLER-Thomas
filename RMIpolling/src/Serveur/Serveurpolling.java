@@ -11,11 +11,9 @@ import Interfaces.Chat;
 public class Serveurpolling extends UnicastRemoteObject implements Chat{
 	private static final long serialVersionUID = 1L;
 	java.util.Scanner entree = new java.util.Scanner(System.in);
-	public static ArrayList<String> messages = new ArrayList<String>(); // création d'une array list pour stocker tous les messages
+	public ArrayList<String> messages = new ArrayList<String>(); // création d'une array list pour stocker tous les messages
 
-	public Serveurpolling() throws RemoteException{
-	super(0);
-	}
+	public Serveurpolling() throws RemoteException{}
 	
 	@Override
 	public String messageBienvenue() throws RemoteException{
